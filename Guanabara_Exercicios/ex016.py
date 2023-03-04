@@ -10,15 +10,22 @@ import math
 num = float(input("Digite um número real qualquer: "))
 print("o numero {} tem a parte inteira {}".format(num, math.trunc(num)))'''
 
-from math import trunc
+#from math import trunc
+
+#num = float(input("Digite um número real qualquer: "))
+#print("o numero {} tem a parte inteira {}".format(num, trunc(num))) #formatar para tirar as casas decimais"
+
+'''
+ OBS1.: É necessário importar a biblioteca math (para operações matemáticas) e acrescer na formatação a funcionalidade 'math.trunc',
+ que serve para 'arredondar para baixo'.
+
+ OBS2.: Pra formatar, utiliza-se chaves '{}'
+
+ OBS3.: Quando for necessário somente uma funcionalidade de uma biblioteca, ao invés de exportá-la toda, é possível importar apenas a
+ função desejada. ex.: 'from math import trunc'
+
+ OBS4.: Alternativamente à importação de biblioteca, você pode usar a função interna 'int' para formatar o número em inteiro.'''
+
 
 num = float(input("Digite um número real qualquer: "))
-print("o numero {} tem a parte inteira {}".format(num, trunc(num))) #formatar para tirar as casas decimais"
-
-# OBS1.: É necessário importar a biblioteca math (para operações matemáticas) e acrescer na formatação a funcionalidade 'math.trunc',
-# que serve para 'arredondar para baixo'.
-
-# OBS2.: Pra formatar, utiliza-se chaves '{}'
-
-# OBS3.: Quando for necessário somente uma funcionalidade de uma biblioteca, ao invés de exportá-la toda, é possível importar apenas a
-# função desejada. ex.: 'from math import trunc'
+print("O número digitado foi {} e sua parte inteira é {}".format(num, int(num)))
