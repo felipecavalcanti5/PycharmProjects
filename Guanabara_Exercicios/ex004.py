@@ -1,8 +1,0 @@
-algo = input("Digite algo: ")
-print(type(algo))
-print(algo.isalnum())
-print(algo.isalpha())
-print(algo.isnumeric())
-print(algo.islower())
-print(algo.isupper())
-print(algo.isdecimal())
